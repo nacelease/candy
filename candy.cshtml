@@ -1,0 +1,73 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<body style="background-color:#B90BFA;">
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome to CandyLand!!</h1>
+
+        <style>
+
+
+
+            <section>
+
+            #grid {
+                display: grid;
+                grid: auto-flow 10vh / repeat(2, 10vw);
+                grid-gap: 10px;
+                text-decoration: underline;
+            }
+
+            .m {
+                font-family: 'Franklin Gothic';
+                font-size: 10px;
+                
+                background-color:#B90BFA
+            }
+
+            #grid > div {
+                
+                font-size: 15px;
+                padding: 10px;
+                text-decoration: underline;
+            }
+        </style>
+        <div id="grid">
+            <div class="alert alert-secondary" role="alert">
+                 <a href="#" class="alert-link">Stock</a>
+            </div>
+
+            <div class="alert alert-secondary" role="alert">
+                <a href="#" class="alert-link">Orders</a>
+            </div>
+
+            <div class="alert alert-secondary" role="alert">
+                <a href="#" class="alert-link">Stores</a>
+            </div>
+
+            <div class="alert alert-secondary" role="alert">
+                <a href="#" class="alert-link">About Us</a>
+            </div>
+
+           
+
+            <label class="party">
+                Candy Flavor
+            </label>
+            <input type="text" placeholder="Pineapple" />
+            <label class="party">
+                Candy Type
+                <input type="text" placeholder="Jawbreakers" />
+                <input type="submit" value="Search" />
+               
+                    
+                    </section>
+
+            </label>
+           
+        </div>
+        
+</body>
